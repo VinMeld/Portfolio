@@ -19,7 +19,9 @@ export default function App() {
 
   return (
     <MainContext.Provider value={contextValue}>
-      <Home />
+      <div className={theme}>
+        <Home />
+      </div>
     </MainContext.Provider>
   );
 }
