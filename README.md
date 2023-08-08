@@ -1,27 +1,65 @@
-# React + TypeScript + Vite
+# Vinay's Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hello there! 👋 Welcome to the repository of my personal portfolio. Here, you'll find the codebase that powers my personal space on the web. My portfolio showcases my projects, experiences, and a bit about who I am. 
 
-Currently, two official plugins are available:
+![Portfolio Screenshot](readme.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
 
-## Expanding the ESLint configuration
+- **Vite**: A build tool and development server that provides a faster and leaner development experience.
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A superset of JavaScript that adds static types.
+  
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Responsive design that looks great on both desktop and mobile.
+- Dark mode for those who prefer a darker aesthetic.
+- Interactive animations for a lively user experience.
+- Detailed projects section to showcase my best work.
 
-- Configure the top-level `parserOptions` property like this:
+## Live Demo
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+[Visit my Portfolio](https://portfolio.vinaycloud.ca)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Development
+
+### Prerequisites
+
+- Node.js
+- npm or Yarn
+
+### Setting Up & Running Locally
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/your-github-username/portfolio.git
+    cd portfolio
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+3. Start the development server:
+
+    ```bash
+    npm run dev
+    ```
+
+4. Open your browser and go to `http://localhost:3000` (or whatever port you've configured).
+
+## Deployment
+
+The site is hosted on **Vercel**. Every push to the main branch triggers a deployment.
+
+## Feedback
+
+If you have any feedback or run into issues, please file an issue on this repository. If you like the repository, please consider giving it a ⭐!
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
