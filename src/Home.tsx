@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { MainContext } from "./App";  // make sure the import path is correct
 
 export default function Home() {
