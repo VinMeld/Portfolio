@@ -18,7 +18,9 @@ export default function App() {
 
   return (
     <MainContext.Provider value={{ theme, toggleTheme }}>
-      <Home />
+      <main className={`${theme} text-foreground bg-background`}>
+        <Home />
+      </main>
     </MainContext.Provider>
   )
 }

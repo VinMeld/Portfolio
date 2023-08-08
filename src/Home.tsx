@@ -11,11 +11,11 @@ export default function Home() {
   const { theme, toggleTheme } = context;
 
   return (
-    <main>
+    <>
       <article>
         <p>The current theme is {theme}.</p>
         <button onClick={toggleTheme}>Toggle Theme</button>
       </article>
-    </main>
+    </>
   );
 }
