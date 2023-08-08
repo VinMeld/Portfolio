@@ -1,21 +1,25 @@
-import { useContext } from "react";
-import { MainContext } from "./main.tsx";  // make sure the import path is correct
+import { useState, createContext } from "react";
+import Home from "./Home";
+
+interface MainContextType {
+  theme: string;
+  toggleTheme: () => void;
+};
+
+export const MainContext = createContext<MainContextType | null>(null);
 
 export default function App() {
-  const context = useContext(MainContext);
+  const [theme, setTheme] = useState<string>("light");
+  
+  const toggleTheme = () => {
+    setTheme(prevTheme => prevTheme === "light" ? "dark" : "light");
+  };
 
-  if (!context) {
-    return <div>Error: Theme context is not available!</div>;
-  }
-
-  const { theme, toggleTheme } = context;
+  const contextValue = { theme, toggleTheme };
 
   return (
-    <>
-      <article>
-        <p>The current theme is {theme}.</p>
-        <button onClick={toggleTheme}>Toggle Theme</button>
-      </article>
-    </>
+    <MainContext.Provider value={contextValue}>
+      <Home />
+    </MainContext.Provider>
   );
 }
