@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <main className={`flex items-center justify-center h-screen w-screen ${theme} text-foreground bg-background`}>
       <article>
-        <p>The current theme is {theme}.</p>
-        <button onClick={toggleTheme}>Toggle Theme</button>
+        <p color="primary">The current theme is {theme}.</p>
+        <button onClick={toggleTheme} color="primary">Toggle Theme</button>
       </article>
     </main>
   );
