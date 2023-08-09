@@ -20,32 +20,33 @@ export default {
       themes: {
         light: {
           layout: {
-            borderRadius: "6px",
-            boxShadow: "0 4px 6px rgba(100, 120, 140, 0.1)",
+              borderRadius: "6px",
+              boxShadow: "0 4px 6px rgba(100, 120, 140, 0.1)",
           },
           colors: {
-            primary: "#5D93E1",
-            secondary: "#FFD369",
-            background: "#E9ECEF",
-            foreground: "#333",
-            border: "#D0D9D9",
-            muted: "#B0BAC9",
+              primary: "#F92672", // Vibrant pink
+              secondary: "#A6E22E", // Vibrant green
+              background: "#FAFAFA", // A light background
+              foreground: "#333", // Retaining your original foreground
+              border: "#D0D9D9", // Retaining your original border
+              muted: "#B0BAC9", // A muted color
           },
-        },
-        dark: {
+      },
+      dark: {
           layout: {
-            borderRadius: "6px",
-            boxShadow: "0 4px 6px rgba(40, 42, 49, 0.2)",
+              borderRadius: "6px",
+              boxShadow: "0 4px 6px rgba(40, 42, 49, 0.2)",
           },
           colors: {
-            primary: "#B088F9",
-            secondary: "#4D80E4",
-            background: "#282A31",
-            foreground: "#E9ECEF",
-            border: "#3C3F48",
-            muted: "#737581",
+              primary: "#F92672", // Vibrant pink
+              secondary: "#A6E22E", // Vibrant green
+              background: "#272822", // Monokai's classic dark grey background
+              foreground: "#F8F8F2", // Monokai's classic light foreground
+              border: "#49483E", // Darker grey, nearly brown
+              muted: "#75715E", // Muted color resembling Monokai
           },
-        },
+      }
+      
       },
     }),
   ]
