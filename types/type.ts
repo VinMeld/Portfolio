@@ -5,6 +5,7 @@ export type PortfolioType = {
     link?: string;
     github: string;
     stack: Array<string>;
+    imageLight?: string;
 }
 
 export type TimelineType = {

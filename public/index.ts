@@ -27,6 +27,7 @@ export const portfolio: Array<PortfolioType> = [
     description:
       "My portfolio showcases my projects, experiences, and a bit about who I am. Coded in Vite, React.JS and Typescript, this portfolio is deployed with Vercel.",
     image: "./portfolio.png",
+    imageLight: "./portfoliolight.png",
     link: "https://portfolio.vinaycloud.ca",
     github: "https://github.com/VinMeld/Portfolio",
     stack: ["Vite", "React.JS", "Typescript", "Vercel"],
@@ -110,8 +111,8 @@ export const timeline: Array<TimelineType> = [
 export const education: EducationType = {
   university: "University of Ottawa",
   degree: "Bachelor of Computer Science",
-  year: "2018 - 2023",
-  gpa: "11.4/12.0",
+  year: "2020 Sept - Dec 2023",
+  gpa: "11.26/12.0",
   details: [
     "Dean's Honour List",
     "Entrance Scholarship",

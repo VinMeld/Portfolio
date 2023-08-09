@@ -10,7 +10,7 @@ const TimelineItem: React.FC<TimelineType> = ({
   location,
 }) => {
   return (
-    <ol className="flex flex-col md:flex-row relative border-l border-stone-200 dark:border-stone-700">
+    <ol className="flex flex-col md:flex-row relative border-l border-stone-200 dark:border-stone-700 transition-transform transform-gpu hover:-translate-y-1 hover:scale-105">
       <li className="mb-10 ml-4">
         <div className="absolute w-3 h-3 bg-stone-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-stone-900 dark:bg-stone-700" />
         <p className="flex flex-wrap gap-4 flex-row items-center justify-start text-xs md:text-sm">
