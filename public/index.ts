@@ -68,8 +68,8 @@ export const timeline: Array<TimelineType> = [
     title: "R&D Software Engineer Intern",
     duration: "4 months",
     details: [
-      "Currently leading the automation of the Nokia Service Platform (NSP) patch tool using Bash and Ansible, aiming to increase speed and accuracy of updates while minimizing downtime.",
-      "Leveraged Docker and Kubernetes to configure the (NSP), leading to the development of a detailed wiki that expedites future deployments.",
+      "Currently leading the automation of the Nokia Service Platform (NSP) patch tool using <strong>Bash</strong> and <strong>Ansible</strong>, aiming to increase speed and accuracy of updates while minimizing downtime.",
+      "Leveraged <strong>Docker</strong> and <strong>Kubernetes</strong> to configure the (NSP), leading to the development of a detailed wiki that expedites future deployments.",
     ],
   },
   {
@@ -79,9 +79,9 @@ export const timeline: Array<TimelineType> = [
     title: "Cloud Native Tools Scheduler Co-op",
     duration: "8 months",
     details: [
-      "Created a framework to streamline the creation of dashboards that displayed errors within the Jenkins pipeline using Python for data collection and React as a graphic display. This framework aided efficiency to assess pipelines 5x, as it enabled the quick creation of a dashboard",
-      "Maintained and created a new dashboard that contained performance metrics in PHP and React. This dashboard helped managers better comprehend the health of the code at a glance, thus decreasing time to identify issues by 10x.",
-      "Created a Regex based tool to parse a provided Jenkins build and collect data on failing tests. This allowed the user to debug their failed tests much faster.",
+      "Created a framework to streamline the creation of dashboards that displayed errors within the <strong>Jenkins</strong> pipeline using <strong>Python</strong> for data collection and <strong>React</strong> as a graphic display. This framework aided efficiency to assess pipelines 5x, as it enabled the quick creation of a dashboard",
+      "Maintained and created a new dashboard that contained performance metrics in <strong>PHP</strong> and <strong>React</strong>. This dashboard helped managers better comprehend the health of the code at a glance, thus decreasing time to identify issues by 10x.",
+      "Created a <strong>Regex</strong> based tool to parse a provided <strong>Jenkins</strong> build and collect data on failing tests. This allowed the user to debug their failed tests much faster.",
     ],
   },
   {
@@ -91,8 +91,8 @@ export const timeline: Array<TimelineType> = [
     title: "QA Engineer Co-op",
     duration: "4 months",
     details: [
-      "Refactored Python scripts to parameterized tests using the DRY principle in order to reduce the amount of repeated code by dozens of lines.",
-      "Redesigned automated Python tests with Pytest to utilize a class based code design thus increasing testing code coverage.",
+      "Refactored <strong>Python</strong> scripts to parameterized tests using the DRY principle in order to reduce the amount of repeated code by dozens of lines.",
+      "Redesigned automated Python tests with <strong>Pytest</strong> to utilize a class based code design thus increasing testing code coverage.",
     ],
   },
   {
@@ -102,8 +102,8 @@ export const timeline: Array<TimelineType> = [
     title: "Dev-ops Intern",
     duration: "2 months",
     details: [
-      "Initiated a project to collect test status and display it on a Grafana dashboard, using a Rest API, Python and SQL. This enabled the team to view the projects pass rate visually.",
-      "Collaborated within an Agile team of developers (in person) and participated in daily Scrum huddles describing work progress/ resolving impediments in order to keep work flowing.`",
+      "Initiated a project to collect test status and display it on a Grafana dashboard, using a Rest API, <strong>Python</strong> and <strong>SQL</strong>. This enabled the team to view the projects pass rate visually.",
+      "Collaborated within an <strong>Agile</strong> team of developers (in person) and participated in daily Scrum huddles describing work progress/ resolving impediments in order to keep work flowing.`",
     ],
   },
 ];

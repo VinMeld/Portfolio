@@ -1,5 +1,6 @@
 import React from "react";
 import { TimelineType } from "../../types/type.ts";
+import ReactHtmlParser from 'react-html-parser';
 
 const TimelineItem: React.FC<TimelineType> = ({
   year,
@@ -29,7 +30,7 @@ const TimelineItem: React.FC<TimelineType> = ({
           <ul className="list-disc pl-5">
             {details.map((detail, idx) => (
               <li key={idx} className="my-2 text-base font-normal">
-                {detail}
+                {ReactHtmlParser(detail)}
               </li>
             ))}
           </ul>
