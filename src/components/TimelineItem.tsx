@@ -29,9 +29,7 @@ const TimelineItem: React.FC<TimelineType> = ({
         {details.length > 0 && (
           <ul className="list-disc pl-5">
             {details.map((detail, idx) => (
-              <li key={idx} className="my-2 text-base font-normal">
-                {ReactHtmlParser(detail)}
-              </li>
+              <li key={idx} className="my-2 text-base font-normal" dangerouslySetInnerHTML={{ __html: detail }} />
             ))}
           </ul>
         )}
