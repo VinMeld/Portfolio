@@ -26,18 +26,18 @@ export default function App() {
       <div
         className={`min-h-screen ${theme} font-inter text-foreground bg-background`}
       >
-        <Button
-          type="button"
-          onClick={toggleTheme}
-          className="fixed p-2 z-1 right-10 top-4 text-lg p-1 rounded-sm bg-transparent"
-          color="primary"
-        >
-          <Image
-            width={25}
-            alt="Sun or Moon"
-            src={theme === "light" ? `./sun.svg` : `./moon.svg`}
-          />
-        </Button>
+      <Button
+        type="button"
+        onClick={toggleTheme}
+        className="fixed p-2 z-1 right-2 sm:right-10 top-4 text-lg p-1 rounded-sm bg-transparent"
+        color="primary"
+      >
+        <Image
+          width={25}
+          alt="Sun or Moon"
+          src={theme === "light" ? `./sun.svg` : `./moon.svg`}
+        />
+      </Button>
         <div className="max-w-5xl w-11/12 mx-auto">
           <Intro />
           <Timeline />
