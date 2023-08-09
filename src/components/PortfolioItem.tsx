@@ -39,7 +39,7 @@ const PortfolioItem: React.FC<PortfolioType> = ({ name, description, image, link
                rel="Link to GitHub" 
                className="absolute bottom-4 right-4 text-xl dark:text-white hover:text-gray-500"
             >
-               <img src="./github.svg" alt="github" className="w-6 h-6" />
+               <img src={!isLightMode ? './lightGithub.svg' : './github.svg' } alt="github" className="w-6 h-6" />
             </a>
          </div>
       </a>
