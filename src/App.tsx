@@ -36,7 +36,6 @@ export default function App() {
             width={25}
             alt="Sun or Moon"
             src={theme === "light" ? `./sun.svg` : `./moon.svg`}
-            color="secondary"
           />
         </Button>
         <div className="max-w-5xl w-11/12 mx-auto">

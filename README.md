@@ -1,8 +1,8 @@
 # Vinay's Portfolio Website
 
-Hello there! 👋 Welcome to the repository of my personal portfolio. Here, you'll find the codebase that powers my personal space on the web. My portfolio showcases my projects, experiences, and a bit about who I am. 
+Hello there! 👋 Welcome to the repository of my personal [portfolio](https://portfolio.vinaycloud.ca). Here, you'll find the codebase that powers my personal space on the web. My portfolio showcases my projects, experiences, and a bit about who I am. 
 
-![Portfolio Screenshot](readme.png)
+![Portfolio Screenshot](public/portfolio.png)
 
 ## Technologies Used
 
@@ -33,7 +33,7 @@ Hello there! 👋 Welcome to the repository of my personal portfolio. Here, you'
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-github-username/portfolio.git
+    git clone https://github.com/VinMeld/portfolio.git
     cd portfolio
     ```
 
@@ -49,7 +49,7 @@ Hello there! 👋 Welcome to the repository of my personal portfolio. Here, you'
     npm run dev
     ```
 
-4. Open your browser and go to `http://localhost:3000` (or whatever port you've configured).
+4. Open your browser and go to `http://localhost:<port number>`
 
 ## Deployment
 

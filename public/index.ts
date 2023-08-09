@@ -1,5 +1,8 @@
 import { PortfolioType, TimelineType, EducationType } from "../types/type";
 
+export const about = `
+I'm a 4th-year Computer Science student at Carleton University in Ottawa. With a passion for software engineering, I seamlessly blend academic insights with practical expertise to create impactful digital solutions, from tools to applications.`;
+
 export const portfolio: Array<PortfolioType> = [
   {
     name: "FitFinder",
@@ -23,7 +26,7 @@ export const portfolio: Array<PortfolioType> = [
     name: "Portfolio",
     description:
       "My portfolio showcases my projects, experiences, and a bit about who I am. Coded in Vite, React.JS and Typescript, this portfolio is deployed with Vercel.",
-    image: "./FitFinderreadme.png",
+    image: "./portfolio.png",
     link: "https://portfolio.vinaycloud.ca",
     github: "https://github.com/VinMeld/Portfolio",
     stack: ["Vite", "React.JS", "Typescript", "Vercel"],
