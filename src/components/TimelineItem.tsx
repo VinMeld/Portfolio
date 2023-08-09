@@ -1,6 +1,5 @@
 import React from "react";
 import { TimelineType } from "../../types/type.ts";
-import ReactHtmlParser from 'react-html-parser';
 
 const TimelineItem: React.FC<TimelineType> = ({
   year,

@@ -35,7 +35,7 @@ const PortfolioItem: React.FC<PortfolioType> = ({ name, description, image, link
             </div>
             <a 
                href={github} 
-               target="_blank" 
+               target="_blank"
                rel="Link to GitHub" 
                className="absolute bottom-4 right-4 text-xl dark:text-white hover:text-gray-500"
             >
