@@ -58,6 +58,16 @@ export const portfolio: Array<PortfolioType> = [
     github: "https://github.com/VinMeld/Scrambler-Android-App",
     stack: ["Kotlin", "Android Studio", "Firebase"],
   },
+  {
+    name: "Sound Analysis",
+    link: "https://sound.vinaycloud.ca",
+    description:
+      "This project uses the ESP32 microcontroller paired with the MAX9814 microphone to detect and monitor sound levels. Detected sound data is sent via MQTT to the AWS IoT broker and stored in DynamoDB. A Next.js frontend application visualizes this data in real-time.",
+    image: "./sound.png",
+    imageLight: "./soundlight.png",
+    github: "https://github.com/VinMeld/Sound-Analysis-App",
+    stack: ["AWS IOT", "DynamoDB", "MQTT", "Next.JS", "React.JS", "Typescript"],
+  },
 ];
 
 export const timeline: Array<TimelineType> = [
