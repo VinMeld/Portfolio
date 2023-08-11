@@ -66,7 +66,7 @@ export const portfolio: Array<PortfolioType> = [
     image: "./sound.png",
     imageLight: "./soundlight.png",
     github: "https://github.com/VinMeld/Sound-Analysis-App",
-    stack: ["AWS IOT", "DynamoDB", "MQTT", "Next.JS", "React.JS", "Typescript"],
+    stack: ["AWS IOT", "DynamoDB", "C++", "MQTT", "Next.JS", "React.JS", "Typescript"],
   },
 ];
 
