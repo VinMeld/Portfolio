@@ -119,7 +119,7 @@ export const timeline: Array<TimelineType> = [
 ];
 
 export const education: EducationType = {
-  university: "University of Ottawa",
+  university: "Carleton University",
   degree: "Bachelor of Computer Science",
   year: "2020 Sept - Dec 2023",
   gpa: "11.26/12.0",

@@ -15,9 +15,15 @@ export const MainContext = createContext<MainContextType | null>(null);
 
 export default function App() {
   const [theme, setTheme] = useState<string>("dark");
+  document.body.setAttribute("data-theme", theme);
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+    setTheme((prevTheme) => {
+      const newTheme = prevTheme === "light" ? "dark" : "light";
+      document.body.setAttribute("data-theme", newTheme);
+      return newTheme;
+    });
   };
+  
 
   const contextValue = { theme, toggleTheme };
 
