@@ -1,18 +1,22 @@
 import React, { useContext } from 'react';
 import { PortfolioType } from "../../types/type";
 import { MainContext } from '../App';
+import { withScrollTrigger } from './scrollTrigger';
 
-const PortfolioItem: React.FC<PortfolioType> = ({ name, description, image, link, github, stack, imageLight }) => {
+const PortfolioItemWithScroll: React.FC<PortfolioType & { isVisible: boolean }> = ({ name, description, image, link, github, stack, imageLight, isVisible }) => {
    const context = useContext(MainContext);
    const isLightMode = context?.theme === 'light';
 
    return (
+      <div className={`${
+         isVisible ? "animate-slideUp" : "opacity-0"
+       } flex flex-col h-full`}> 
       <a 
          href={link}
          target="_blank"
          rel="Link to Website"
-         className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden relative transition-transform transform-gpu hover:-translate-y-1 hover:scale-105"
-      >
+         className="flex-grow rounded-md overflow-hidden relative transition-transform transform-gpu hover:-translate-y-1 hover:scale-105 border-2 border-stone-900 dark:border-white" 
+         >
          <div className="relative w-full h-36 md:h-48">
          <div className="absolute inset-0 bg-gradient-to-r from-background to-border opacity-70"></div>
             <div className="absolute inset-0 flex justify-center items-center">
@@ -43,7 +47,8 @@ const PortfolioItem: React.FC<PortfolioType> = ({ name, description, image, link
             </a>
          </div>
       </a>
+   </div>
    )
 }
-
+const PortfolioItem = withScrollTrigger(PortfolioItemWithScroll);
 export default PortfolioItem;

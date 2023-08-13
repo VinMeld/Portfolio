@@ -1,12 +1,17 @@
 import Title from "./Title";
 import { education } from "../../public/index.ts";
+import { withScrollTrigger } from "./scrollTrigger.tsx";
 
-const Education = () => {
+const EducationContent: React.FC<{ isVisible: boolean }> = ({ isVisible }) => {
   return (
     <div className="flex flex-col md:flex-row justify-center my-20">
       <div className="w-full md:w-7/12">
         <Title>Education</Title>
-        <ol className="flex flex-col md:flex-row relative border-l border-stone-200 dark:border-stone-700 transition-transform transform-gpu hover:-translate-y-1 hover:scale-105">
+        <ol
+          className={`flex flex-col md:flex-row relative border-l border-stone-200 dark:border-stone-700 transition-transform transform-gpu hover:-translate-y-1 hover:scale-105 ${
+            isVisible ? "animate-slideUp" : "opacity-0"
+          }`}
+        >
           <li className="mb-10 ml-4">
             <div className="absolute w-3 h-3 bg-stone-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-stone-900 dark:bg-stone-700" />
             <p className="flex flex-wrap gap-4 flex-row items-center justify-start text-xs md:text-sm">
@@ -36,5 +41,6 @@ const Education = () => {
     </div>
   );
 };
+const EducationWithScroll = withScrollTrigger(EducationContent);
 
-export default Education;
+export default EducationWithScroll;
