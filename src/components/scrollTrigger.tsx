@@ -10,6 +10,7 @@ export const withScrollTrigger = (WrappedComponent: React.FC<any>) => {
     };
 
     return (
+      // @ts-ignore
       <ScrollTrigger onEnter={onEnterViewport}>
         <WrappedComponent {...props} isVisible={isVisible} />
       </ScrollTrigger>
