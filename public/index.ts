@@ -73,50 +73,51 @@ export const portfolio: Array<PortfolioType> = [
 export const timeline: Array<TimelineType> = [
   {
     company: "Nokia",
-    location: "Ottawa, ON",
-    year: "2023 May - August 2023",
+    location: "Ottawa, ON, Canada",
+    year: "May 2023 - August 2023",
     title: "R&D Software Engineer Intern",
     duration: "4 months",
     details: [
-      "Currently leading the automation of the Nokia Service Platform (NSP) patch tool using <strong>Bash</strong> and <strong>Ansible</strong>, aiming to increase speed and accuracy of updates while minimizing downtime.",
-      "Leveraged <strong>Docker</strong> and <strong>Kubernetes</strong> to configure the (NSP), leading to the development of a detailed wiki that expedites future deployments.",
+      "Spearheaded the automation of the Nokia Service Platform (NSP) patch tool using <strong>Bash</strong> and <strong>Ansible</strong> to enhance update efficiency and mitigate downtime.",
+      "Utilized <strong>Docker</strong> and <strong>Kubernetes</strong> for NSP configurations, yielding a detailed wiki that streamlines future deployments."
     ],
   },
   {
     company: "Ericsson",
-    location: "Ottawa, ON",
-    year: "2022 May - December 2022",
+    location: "Ottawa, ON, Canada",
+    year: "May 2022 - December 2022",
     title: "Cloud Native Tools Scheduler Co-op",
     duration: "8 months",
     details: [
-      "Created a framework to streamline the creation of dashboards that displayed errors within the <strong>Jenkins</strong> pipeline using <strong>Python</strong> for data collection and <strong>React</strong> as a graphic display. This framework aided efficiency to assess pipelines 5x, as it enabled the quick creation of a dashboard",
-      "Maintained and created a new dashboard that contained performance metrics in <strong>PHP</strong> and <strong>React</strong>. This dashboard helped managers better comprehend the health of the code at a glance, thus decreasing time to identify issues by 10x.",
-      "Created a <strong>Regex</strong> based tool to parse a provided <strong>Jenkins</strong> build and collect data on failing tests. This allowed the user to debug their failed tests much faster.",
+      "Devised a framework in <strong>Python</strong> and <strong>React</strong> to swiftly generate dashboards that spotlight <strong>Jenkins</strong> pipeline errors, enhancing pipeline analysis efficiency by five times.",
+      "Formulated and maintained performance metric dashboards in <strong>PHP</strong> and <strong>React</strong>, empowering managers to rapidly assess code health and reducing issue identification time tenfold.",
+      "Crafted a <strong>Regex</strong> utility to scrutinize <strong>Jenkins</strong> builds, facilitating quicker identification of failing tests."
     ],
   },
   {
     company: "Rockport Networks",
-    location: "Ottawa, ON",
-    year: "2021 May - August 2021",
+    location: "Ottawa, ON, Canada",
+    year: "May 2021 - August 2021",
     title: "QA Engineer Co-op",
     duration: "4 months",
     details: [
-      "Refactored <strong>Python</strong> scripts to parameterized tests using the DRY principle in order to reduce the amount of repeated code by dozens of lines.",
-      "Redesigned automated Python tests with <strong>Pytest</strong> to utilize a class based code design thus increasing testing code coverage.",
+      "Refactored <strong>Python</strong> scripts, implementing parameterized tests and the DRY principle, trimming redundant code significantly.",
+      "Restructured automated <strong>Python</strong> tests using <strong>Pytest</strong> for class-based design, amplifying test coverage."
     ],
   },
   {
     company: "Nokia",
-    location: "Ottawa, ON",
-    year: "2019 July - August 2019",
+    location: "Ottawa, ON, Canada",
+    year: "July 2019 - August 2019",
     title: "Dev-ops Intern",
     duration: "2 months",
     details: [
-      "Initiated a project to collect test status and display it on a Grafana dashboard, using a Rest API, <strong>Python</strong> and <strong>SQL</strong>. This enabled the team to view the projects pass rate visually.",
-      "Collaborated within an <strong>Agile</strong> team of developers (in person) and participated in daily Scrum huddles describing work progress/ resolving impediments in order to keep work flowing.`",
+      "Pioneered a project to visually represent test statuses on a Grafana dashboard using a Rest API, <strong>Python</strong>, and <strong>SQL</strong>, enhancing team insights into project success rates.",
+      "Actively collaborated in an <strong>Agile</strong> team, partaking in daily Scrum discussions to streamline progress and address challenges."
     ],
   },
 ];
+
 
 export const education: EducationType = {
   university: "Carleton University",
@@ -130,6 +131,6 @@ export const education: EducationType = {
     "Member of the Carleton Univeristy Hacking Community (CUHacking)",
     "Member of the Carleton Cyber Security Club (CCSC)",
     "Member of the Carleton Chess Club (CCC)",
-    "Member of the Carleton A.I Club (CAIC)",
+    "Member of the Carleton A.I. Club (CAIC)",
   ],
 };
