@@ -13,7 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@nextui-org/react": "^2.6.11",
+    "@heroui/react": "^2.8.7",
     "@tailwindcss/postcss": "^4.1.18",
     "framer-motion": "^12.23.26",
     "react": "^19.2.3",

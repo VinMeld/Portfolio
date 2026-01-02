@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import { nextui } from "@nextui-org/react";
+import { heroui } from "@heroui/react";
 export default {
   content: [
     "./index.html",
