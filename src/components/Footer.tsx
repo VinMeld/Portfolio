@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div className="py-5 text-center">
-      <div className="container max-w-screen-lg mx-auto">
+      <div className="container max-w-(--breakpoint-lg) mx-auto">
         <div>
           <div className="flex flex-wrap justify-center gap-2">
             <a

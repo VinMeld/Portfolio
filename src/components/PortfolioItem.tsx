@@ -15,10 +15,10 @@ const PortfolioItemWithScroll: React.FC<PortfolioType & { isVisible: boolean }> 
          href={link}
          target="_blank"
          rel="Link to Website"
-         className="flex-grow rounded-md overflow-hidden relative transition-transform transform-gpu hover:-translate-y-1 hover:scale-105 border-2 border-stone-900 dark:border-white" 
+         className="grow rounded-md overflow-hidden relative transition-transform transform-gpu hover:-translate-y-1 hover:scale-105 border-2 border-stone-900 dark:border-white" 
          >
          <div className="relative w-full h-36 md:h-48">
-         <div className="absolute inset-0 bg-gradient-to-r from-background to-border opacity-70"></div>
+         <div className="absolute inset-0 bg-linear-to-r from-background to-border opacity-70"></div>
             <div className="absolute inset-0 flex justify-center items-center">
                 <img
                     src={isLightMode && imageLight ? imageLight : image}
