@@ -1,6 +1,6 @@
 # Vinay's Portfolio Website
 
-Hello there! 👋 Welcome to the repository of my personal [portfolio](https://portfolio.vinaycloud.ca). Here, you'll find the codebase that powers my personal space on the web. My portfolio showcases my projects, experiences, and a bit about who I am. 
+Hello there! 👋 Welcome to the repository of my personal [portfolio](https://portfolio.vinaymeldrum.ca). Here, you'll find the codebase that powers my personal space on the web. My portfolio showcases my projects, experiences, and a bit about who I am. 
 
 ![Portfolio Screenshot](public/portfolio.png)
 
@@ -19,7 +19,7 @@ Hello there! 👋 Welcome to the repository of my personal [portfolio](https://p
 
 ## Live Demo
 
-[Visit my Portfolio](https://portfolio.vinaycloud.ca)
+[Visit my Portfolio](https://portfolio.vinaymeldrum.ca)
 
 ## Development
 
@@ -58,8 +58,3 @@ The site is hosted on **Vercel**. Every push to the main branch triggers a deplo
 ## Feedback
 
 If you have any feedback or run into issues, please file an issue on this repository. If you like the repository, please consider giving it a ⭐!
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
-
