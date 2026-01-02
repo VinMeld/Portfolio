@@ -1,24 +1,55 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+@source "../node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}";
+
+:root {
+    --color-primary: #F92672;
+    --color-secondary: #A6E22E;
+    --color-background: #FAFAFA;
+    --color-foreground: #333;
+    --color-border: #D0D9D9;
+    --color-muted: #B0BAC9;
+    --radius: 6px;
+}
+
+.dark {
+    --color-background: #272822;
+    --color-foreground: #F8F8F2;
+    --color-border: #49483E;
+    --color-muted: #75715E;
+}
+
+@theme {
+    --color-primary: var(--color-primary);
+    --color-secondary: var(--color-secondary);
+    --color-background: var(--color-background);
+    --color-foreground: var(--color-foreground);
+    --color-border: var(--color-border);
+    --color-muted: var(--color-muted);
+    --radius: var(--radius);
+}
 
 @keyframes slideUp {
     from {
-      opacity: 0;
-      transform: translateY(50px);
+        opacity: 0;
+        transform: translateY(50px);
     }
+
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
-  .animate-slideUp {
+}
+
+.animate-slideUp {
     animation: slideUp 0.5s forwards;
-    opacity: 0; /* set initial opacity to 0 */
-  }
-  
-  .opacity-0 {
     opacity: 0;
-  }
+    /* set initial opacity to 0 */
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
 /* Light Theme */
 body[data-theme='light']::-webkit-scrollbar,
 body[data-theme='light'] *::-webkit-scrollbar {
@@ -34,8 +65,10 @@ body[data-theme='light'] *::-webkit-scrollbar-track {
 body[data-theme='light']::-webkit-scrollbar-thumb,
 body[data-theme='light'] *::-webkit-scrollbar-thumb {
     background: #888;
-    border-radius: 20px; /* Rounder corners */
-    transition: background 0.3s ease-in-out; /* Smooth color transition */
+    border-radius: 20px;
+    /* Rounder corners */
+    transition: background 0.3s ease-in-out;
+    /* Smooth color transition */
 }
 
 body[data-theme='light']::-webkit-scrollbar-thumb:hover,
@@ -57,23 +90,27 @@ body[data-theme='dark'] *::-webkit-scrollbar-track {
 
 body[data-theme='dark']::-webkit-scrollbar-thumb,
 body[data-theme='dark'] *::-webkit-scrollbar-thumb {
-    background: #555; /* Darker thumb color */
+    background: #555;
+    /* Darker thumb color */
     border-radius: 20px;
     transition: background 0.3s ease-in-out;
 }
 
 body[data-theme='dark']::-webkit-scrollbar-thumb:hover,
 body[data-theme='dark'] *::-webkit-scrollbar-thumb:hover {
-    background: #333; /* Even darker thumb hover color */
+    background: #333;
+    /* Even darker thumb hover color */
 }
 
 /* Firefox */
 body[data-theme='light'] {
     scrollbar-width: thin;
-    scrollbar-color: #888 #f1f1f1; /* Thumb color and Track color respectively */
+    scrollbar-color: #888 #f1f1f1;
+    /* Thumb color and Track color respectively */
 }
 
 body[data-theme='dark'] {
     scrollbar-width: thin;
-    scrollbar-color: #555 #1a1a1a; /* Thumb color and Track color respectively */
+    scrollbar-color: #555 #1a1a1a;
+    /* Thumb color and Track color respectively */
 }

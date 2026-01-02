@@ -1,19 +1,17 @@
-import ScrollTrigger from "react-scroll-trigger";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 export const withScrollTrigger = (WrappedComponent: React.FC<any>) => {
   return (props: any) => {
     const [isVisible, setIsVisible] = useState(false);
 
-    const onEnterViewport = () => {
-      setIsVisible(true);
-    };
-
     return (
-      // @ts-ignore
-      <ScrollTrigger onEnter={onEnterViewport}>
+      <motion.div
+        onViewportEnter={() => setIsVisible(true)}
+        viewport={{ once: true }}
+      >
         <WrappedComponent {...props} isVisible={isVisible} />
-      </ScrollTrigger>
+      </motion.div>
     );
   };
 };
