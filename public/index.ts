@@ -1,15 +1,31 @@
 import { PortfolioType, TimelineType, EducationType } from "../types/type";
 
 export const about = `
-I'm a 4th-year Computer Science student at Carleton University in Ottawa. With a passion for software engineering, I seamlessly blend academic insights with practical expertise to create impactful digital solutions, from tools to applications.`;
+I'm a Software Engineer II at Cisco. With a passion for software engineering, I seamlessly blend academic insights with practical expertise to create impactful digital solutions, from tools to applications.`;
 
 export const portfolio: Array<PortfolioType> = [
+  {
+    name: "Go-Send",
+    description:
+      "A simple, secure file-sharing application written in Go. Features end-to-end encryption (E2EE) using X25519 and XSalsa20-Poly1305, ephemeral keys for every transfer, and optional auto-delete. Supports local and AWS S3 storage with a CLI client for easy management.",
+    image: "./GoSend.png",
+    github: "https://github.com/VinMeld/Go-Send",
+    stack: [
+      "Go",
+      "sqlite3",
+      "AWS S3",
+      "Docker",
+      "GitHub Actions",
+      "X25519",
+      "XSalsa20-Poly1305",
+      "log/slog",
+    ],
+  },
   {
     name: "FitFinder",
     description:
       "FitFinder is a fitness-oriented application that connects users and trainers, offering a seamless interface for interaction and personal training needs. Built with NextJS, TailwindCSS, and Supabase as the backend, FitFinder is deployed with Vercel.",
     image: "./FitFinderreadme.png",
-    link: "https://fitfinder.ca",
     github: "https://github.com/VinMeld/FitFinder",
     stack: [
       "NextJS",
@@ -28,7 +44,7 @@ export const portfolio: Array<PortfolioType> = [
       "My portfolio showcases my projects, experiences, and a bit about who I am. Coded in Vite, React.JS and Typescript, this portfolio is deployed with Vercel.",
     image: "./portfolio.png",
     imageLight: "./portfoliolight.png",
-    link: "https://portfolio.vinaycloud.ca",
+    link: "https://portfolio.vinaymeldrum.ca",
     github: "https://github.com/VinMeld/Portfolio",
     stack: ["Vite", "React.JS", "Typescript", "Vercel"],
   },
@@ -37,7 +53,6 @@ export const portfolio: Array<PortfolioType> = [
     description:
       "Dive into a world of music and save your favorite moments. With the Music Web App, curate your collection, save favorites, and share them with the community.",
     image: "./music.png",
-    link: "https://music.vinaycloud.ca",
     github: "https://github.com/VinMeld/Music-Webapp",
     stack: [
       "React.JS",
@@ -60,7 +75,7 @@ export const portfolio: Array<PortfolioType> = [
   },
   {
     name: "Sound Analysis",
-    link: "https://sound.vinaycloud.ca",
+    link: "https://sound.vinaymeldrum.ca",
     description:
       "This project uses the ESP32 microcontroller paired with the MAX9814 microphone to detect and monitor sound levels. Detected sound data is sent via MQTT to the AWS IoT broker and stored in DynamoDB. A Next.js frontend application visualizes this data in real-time.",
     image: "./sound.png",
@@ -72,48 +87,57 @@ export const portfolio: Array<PortfolioType> = [
 
 export const timeline: Array<TimelineType> = [
   {
+    company: "Cisco",
+    location: "Ottawa, ON, Canada",
+    year: "January 2024 - Present",
+    title: "Software Engineer",
+    duration: "2 years",
+    details: [
+      "Tech-led a critical runtime feature for a top cloud services provider, improving failover in high-availability deployments through direct coordination with the wireless team.",
+      "Improved system stability by resolving a 6+ month long concurrency crash affecting customer deployments by resolving hardware-specific memory ordering issues.",
+      "Developed a <strong>C-based CLI</strong> to inspect live runtime state, reducing customer issue resolution time by 35% and lowering support escalations.",
+      "Implemented internal <strong>YANG telemetry models</strong> to expose internal log data, enabling structured introspection and improving automation coverage by 30%.",
+    ],
+  },
+  {
     company: "Nokia",
     location: "Ottawa, ON, Canada",
-    year: "May 2023 - August 2023",
-    title: "R&D Software Engineer Intern",
-    duration: "4 months",
+    year: "May 2023 - December 2023",
+    title: "DevOps Engineer",
+    duration: "8 months",
     details: [
-      "Spearheaded the automation of the Nokia Service Platform (NSP) patch tool using <strong>Bash</strong> and <strong>Ansible</strong> to enhance update efficiency and mitigate downtime.",
-      "Utilized <strong>Docker</strong> and <strong>Kubernetes</strong> for NSP configurations, yielding a detailed wiki that streamlines future deployments."
+      "Built and streamlined <strong>GitLab CI/CD</strong> pipelines to automate build, test, and deployment workflows for 5+ Python and React services, improving developer productivity and release reliability for a growing platform.",
+      "Led the automation of the Nokia Service Platform (NSP) patch tool using <strong>Bash</strong> and <strong>Ansible</strong>, increasing speed and accuracy of customer updates while eliminating downtime.",
     ],
   },
   {
     company: "Ericsson",
     location: "Ottawa, ON, Canada",
     year: "May 2022 - December 2022",
-    title: "Cloud Native Tools Scheduler Co-op",
+    title: "Cloud Tools Developer Intern",
     duration: "8 months",
     details: [
-      "Devised a framework in <strong>Python</strong> and <strong>React</strong> to swiftly generate dashboards that spotlight <strong>Jenkins</strong> pipeline errors, enhancing pipeline analysis efficiency by five times.",
-      "Formulated and maintained performance metric dashboards in <strong>PHP</strong> and <strong>React</strong>, empowering managers to rapidly assess code health and reducing issue identification time tenfold.",
-      "Crafted a <strong>Regex</strong> utility to scrutinize <strong>Jenkins</strong> builds, facilitating quicker identification of failing tests."
+      "Developed a <strong>Python/React</strong> framework to visualize <strong>Jenkins</strong> pipeline errors, resulting in a 5x increase in pipeline assessment efficiency.",
     ],
   },
   {
     company: "Rockport Networks",
     location: "Ottawa, ON, Canada",
     year: "May 2021 - August 2021",
-    title: "QA Engineer Co-op",
+    title: "QA Engineer Intern",
     duration: "4 months",
     details: [
-      "Refactored <strong>Python</strong> scripts, implementing parameterized tests and the DRY principle, trimming redundant code significantly.",
-      "Restructured automated <strong>Python</strong> tests using <strong>Pytest</strong> for class-based design, amplifying test coverage."
+      "Redesigned and refactored automated Python tests with <strong>Pytest</strong> to utilize a class based code design, increasing testing code coverage.",
     ],
   },
   {
     company: "Nokia",
     location: "Ottawa, ON, Canada",
     year: "July 2019 - August 2019",
-    title: "Dev-ops Intern",
+    title: "DevOps Intern",
     duration: "2 months",
     details: [
-      "Pioneered a project to visually represent test statuses on a Grafana dashboard using a Rest API, <strong>Python</strong>, and <strong>SQL</strong>, enhancing team insights into project success rates.",
-      "Actively collaborated in an <strong>Agile</strong> team, partaking in daily Scrum discussions to streamline progress and address challenges."
+      "Initiated a project to collect test status and display it on a <strong>Grafana</strong> dashboard using a <strong>Rest API</strong>, <strong>Python and SQL</strong>. This enabled the team to view the projects pass rate visually.",
     ],
   },
 ];
